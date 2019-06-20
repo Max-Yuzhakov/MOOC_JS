@@ -1,0 +1,10 @@
+BROWSER -> SERVER : HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+SERVER -> BROWSER : HTML DOC
+BROWSER -> SERVER : HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+SERVER -> BROWSER : MAIN.CSS
+BROWSER -> SERVER : HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+SERVER -> BROWSER : SPA.JS
+// BROWSER EXECUTES SPA.JS -> REQUEST DATA.JSON
+BROWSER -> SERVER : HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+SERVER -> BROWSER : DATA.JSON [{ content: "HTML is easy", date: 2019-05-23T17:30:31.098Z ....}]
+// JSON DATA PARSED AND RENDERED ONTO DISPLAY
